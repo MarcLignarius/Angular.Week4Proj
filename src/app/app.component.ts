@@ -12,8 +12,11 @@ export class AppComponent {
     new Show('Nile', 'Hawthorne Theater', '11/22/2019 | 07:30 pm', 25, 'All Ages'),
     new Show('Gojira', 'Roseland Theater', '07/29/2019 | 08:30 pm', 25, 'All Ages'),
   ];
-  selectedShow: Show = this.shows[0];
+  selectedShow = null;
   editShow(clickedShow) {
     this.selectedShow = clickedShow;
+  }
+  finishedEditing() {
+    this.selectedShow = null;
   }
 }

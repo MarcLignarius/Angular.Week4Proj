@@ -10,18 +10,19 @@
   <hr>
 </div>
 
-<!-- <div *ngIf="selectedShow"> -->
+<div *ngIf="selectedShow">
   <form>
     <label>Band:</label>
     <input [(ngModel)]="selectedShow.band" type="text" name="band">
-    <label>Add venue:</label>
+    <label>Venue:</label>
     <input [(ngModel)]="selectedShow.venue" type="text" name="venue">
-    <label>Add date and time</label>
+    <label>Date and Time</label>
     <input [(ngModel)]="selectedShow.date" type="text" name="date">
-    <label>Add price:</label>
+    <label>Price:</label>
     <input [(ngModel)]="selectedShow.price" type="number" name="price">
     <label>All ages or 21+?</label><br>
     <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
     <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
+    <button (click)="finishedEditing()">Done</button>
   </form>
-<!-- </div> -->
+</div>

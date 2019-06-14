@@ -6,11 +6,11 @@
   <p>{{currentShow.venue}}</p>
   <p>{{currentShow.date}}</p>
   <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
-  <button (click)="editShow(currentBand, venue, date, price, ageLimit)">Edit Listing</button>
+  <button (click)="editShow(currentShow)">Edit Listing</button>
   <hr>
 </div>
 
-<div *ngIf="selectedShow">
+<!-- <div *ngIf="selectedShow"> -->
   <form>
     <label>Band:</label>
     <input [(ngModel)]="selectedShow.band" type="text" name="band">
@@ -24,4 +24,4 @@
     <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
     <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
   </form>
-</div>
+<!-- </div> -->

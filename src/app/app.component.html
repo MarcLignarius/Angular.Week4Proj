@@ -1,5 +1,10 @@
-<h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
-<h3>{{currentFocus}}</h3>
-<ul>
-  <li *ngFor="let currentShow of shows">{{currentShow.description}}</li>
-</ul>
+<h3>PDX Show Guide</h3>
+<em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
+
+<div *ngFor="let currentShow of shows">
+  <h5 *ngFor="let currentBands of currentShow.bands">{{currentBands}}</h5>
+  <p>{{currentShow.venue}}</p>
+  <p>{{currentShow.date}}</p>
+  <p>${{currentShow.price}} | {{currentShow.ageLimit}}</p>
+  <hr>
+</div>

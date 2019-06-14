@@ -12,4 +12,8 @@ export class AppComponent {
     new Show(['Nile, Terrorizer'], 'Hawthorne Theater', '11/22/2019 | 07:30 pm', 25, 'All Ages'),
     new Show(['Gojira'], 'Roseland Theater', '07/29/2019 | 08:30 pm', 25, 'All Ages'),
   ];
+  selectedShow: Show = this.shows[0];
+  editShow(clickedShow) {
+    this.selectedShow = clickedShow;
+  }
 }

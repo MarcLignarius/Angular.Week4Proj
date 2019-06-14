@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-# Designing the application
+## Designing the application
 
 Since there is a lot of planning and not a whole lot of coding at the early stages of this project, I tracked my thought process about building this application in the Google Doc below instead of making commits:
 

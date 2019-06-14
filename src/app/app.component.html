@@ -2,24 +2,26 @@
 <em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
 
 <div *ngFor="let currentShow of shows">
-  <h5 *ngFor="let currentBands of currentShow.bands">{{currentBands}}</h5>
+  <h5>{{currentShow.band}}</h5>
   <p>{{currentShow.venue}}</p>
   <p>{{currentShow.date}}</p>
   <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
-  <button (click)="editShow(currentBands, venue, date, price, ageLimit)">Edit Listing</button>
+  <button (click)="editShow(currentBand, venue, date, price, ageLimit)">Edit Listing</button>
   <hr>
 </div>
 
-<form>
-  <label>Bands:</label>
-  <input [(ngModel)]="selectedShow.bands" type="text" name="bands">
-  <label>Add venue:</label>
-  <input [(ngModel)]="selectedShow.venue" type="text" name="venue">
-  <label>Add date and time</label>
-  <input [(ngModel)]="selectedShow.date" type="text" name="date">
-  <label>Add price:</label>
-  <input [(ngModel)]="selectedShow.price" type="number" name="price">
-  <label>All ages or 21+?</label><br>
-  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
-  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
-</form>
+<div *ngIf="selectedShow">
+  <form>
+    <label>Band:</label>
+    <input [(ngModel)]="selectedShow.band" type="text" name="band">
+    <label>Add venue:</label>
+    <input [(ngModel)]="selectedShow.venue" type="text" name="venue">
+    <label>Add date and time</label>
+    <input [(ngModel)]="selectedShow.date" type="text" name="date">
+    <label>Add price:</label>
+    <input [(ngModel)]="selectedShow.price" type="number" name="price">
+    <label>All ages or 21+?</label><br>
+    <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
+    <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
+  </form>
+</div>

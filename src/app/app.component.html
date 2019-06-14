@@ -2,10 +2,10 @@
 <em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
 
 <div *ngFor="let currentShow of shows">
-  <h5 *ngFor="let currentBands of currentShow.bands">{{selectedBands}}</h5>
-  <p>{{selectedShow.venue}}</p>
-  <p>{{selectedShow.date}}</p>
-  <p>{{selectedShow.price}} | {{selectedShow.ageLimit}}</p>
+  <h5 *ngFor="let currentBands of currentShow.bands">{{currentBands}}</h5>
+  <p>{{currentShow.venue}}</p>
+  <p>{{currentShow.date}}</p>
+  <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
   <button (click)="editShow(currentBands, venue, date, price, ageLimit, flyImage)">Edit Listing</button>
   <hr>
 </div>
@@ -20,6 +20,6 @@
   <label>Add price:</label>
   <input [(ngModel)]="selectedShow.price" type="number" name="price">
   <label>All ages or 21+?</label><br>
-  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages">All Ages<br>
-  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+">21+<br>
+  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
+  <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
 </form>

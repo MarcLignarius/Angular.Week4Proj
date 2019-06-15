@@ -1,15 +1,6 @@
 <h3>PDX Show Guide</h3>
 <em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
-
-<div *ngFor="let currentShow of shows">
-  <h5>{{currentShow.band}}</h5>
-  <p>{{currentShow.venue}}</p>
-  <p>{{currentShow.date}}</p>
-  <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
-  <button (click)="editShow(currentShow)">Edit Listing</button>
-  <hr>
-</div>
-
+<app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
 <div *ngIf="selectedShow">
   <form>
     <label>Band:</label>

@@ -1,19 +1,4 @@
 <h3>PDX Show Guide</h3>
 <em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
 <app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
-<div *ngIf="selectedShow">
-  <form>
-    <label>Band:</label>
-    <input [(ngModel)]="selectedShow.band" type="text" name="band">
-    <label>Venue:</label>
-    <input [(ngModel)]="selectedShow.venue" type="text" name="venue">
-    <label>Date and Time</label>
-    <input [(ngModel)]="selectedShow.date" type="text" name="date">
-    <label>Price:</label>
-    <input [(ngModel)]="selectedShow.price" type="number" name="price">
-    <label>All ages or 21+?</label><br>
-    <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
-    <input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
-    <button (click)="finishedEditing()">Done</button>
-  </form>
-</div>
+<app-show-edit [childSelectedShow]="selectedShow" (clickedDone)="finishedEditing()"></app-show-edit>

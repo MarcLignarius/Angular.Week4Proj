@@ -1,3 +1,16 @@
-<p>
-  show-edit works!
-</p>
+<div *ngIf="childSelectedShow">
+  <form>
+    <label>Band:</label>
+    <input [(ngModel)]="childSelectedShow.band" type="text" name="band">
+    <label>Venue:</label>
+    <input [(ngModel)]="childSelectedShow.venue" type="text" name="venue">
+    <label>Date and Time</label>
+    <input [(ngModel)]="childSelectedShow.date" type="text" name="date">
+    <label>Price:</label>
+    <input [(ngModel)]="childSelectedShow.price" type="number" name="price">
+    <label>All ages or 21+?</label><br>
+    <input type="radio" [(ngModel)]="childSelectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
+    <input type="radio" [(ngModel)]="childSelectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
+    <button (click)="finishedEditing()">Done</button>
+  </form>
+</div>

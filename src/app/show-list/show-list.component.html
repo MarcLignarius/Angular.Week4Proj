@@ -1,3 +1,8 @@
-<p>
-  show-list works!
-</p>
+<div *ngFor="let currentShow of childShowList">
+  <h5>{{currentShow.band}}</h5>
+  <p>{{currentShow.venue}}</p>
+  <p>{{currentShow.date}}</p>
+  <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
+  <button (click)="editButtonClicked(currentShow)">Edit Listing</button>
+  <hr>
+</div>

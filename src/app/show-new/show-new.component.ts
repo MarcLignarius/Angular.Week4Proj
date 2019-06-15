@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { Show } from '../models/show.model';
 
 @Component({
   selector: 'app-show-new',

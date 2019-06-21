@@ -15,7 +15,7 @@
     <p>{{show.date}}</p>
     <p>{{show.price}} | {{show.ageLimit}}</p>
     <button (click)="goToShowDetail(show)">Full Detail</button>
-    <!-- <button (click)="goToShowEdit(show)">Edit Listing</button> -->
+    <button (click)="goToShowEdit(show)">Edit Listing</button>
     <app-show-edit [selectedShow]="show"></app-show-edit>
   </div>
 </div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ShowListComponent } from './show-list/show-list.component';
 import { ShowNewComponent } from './show-new/show-new.component';
 import { ShowEditComponent } from './show-edit/show-edit.component';
+import { ShowDetailComponent } from './show-detail/show-detail.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ShowEditComponent } from './show-edit/show-edit.component';
     AppComponent,
     ShowListComponent,
     ShowNewComponent,
-    ShowEditComponent
+    ShowEditComponent,
+    ShowDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,28 @@
-<div *ngIf="childSelectedShow">
-  <form>
-    <label>Band:</label>
-    <input [(ngModel)]="childSelectedShow.bands" type="text" name="bands">
-    <label>Venue:</label>
-    <input [(ngModel)]="childSelectedShow.venue" type="text" name="venue">
-    <label>Date and Time</label>
-    <input [(ngModel)]="childSelectedShow.date" type="text" name="date">
-    <label>Price:</label>
-    <input [(ngModel)]="childSelectedShow.price" type="number" name="price">
-    <label>All ages or 21+?</label><br>
-    <input type="radio" [(ngModel)]="childSelectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
-    <input type="radio" [(ngModel)]="childSelectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
-    <button (click)="finishedEditing()">Done</button>
-  </form>
-</div>
+<h2>Edit Show</h2>
+
+<!-- <label>Flyer:</label>
+<input [(ngModel)]="selectedShow.flyer" type="image" name="flyer">
+<br> -->
+
+<label>Bands:</label>
+<input [(ngModel)]="selectedShow.bands" type="text" name="bands">
+<br>
+
+<label>Venue:</label>
+<input [(ngModel)]="selectedShow.venue" type="text" name="venue">
+<br>
+
+<label>Date and Time</label>
+<input [(ngModel)]="selectedShow.date" type="text" name="date">
+<br>
+
+<label>Price:</label>
+<input [(ngModel)]="selectedShow.price" type="number" name="price">
+<br>
+
+<label>All ages?</label><br>
+<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">Yes<br>
+<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">No<br>
+<br>
+
+<button (click)="updateShow(selectedShow)">Update</button>

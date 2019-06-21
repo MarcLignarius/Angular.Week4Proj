@@ -6,5 +6,6 @@ export class Show {
       public date: string,
       public price: number,
       public ageLimit: string,
+      public category: string,
       ) { }
   }

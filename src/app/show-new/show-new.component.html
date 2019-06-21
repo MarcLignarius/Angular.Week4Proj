@@ -1,3 +1,53 @@
-<p>
-  show-new works!
-</p>
+<div class="panel-heading">
+  <h3 class="panel-title">Add Show</h3>
+</div>
+<div class="panel-body">
+
+  <!-- <div>
+    <label>Flyer:</label>
+    <br>
+    <input #newFlyer>
+  </div> -->
+
+  <div>
+    <label>Bands:</label>
+    <br>
+    <input #newBands>
+  </div>
+
+  <div>
+    <label>Venue:</label>
+    <br>
+    <input #newVenue>
+  </div>
+
+  <div>
+    <label>Date:</label>
+    <br>
+    <input #newDate>
+  </div>
+
+  <div>
+    <label>Show Price:</label>
+    <br>
+    <input #newPrice>
+  </div>
+
+  <div>
+    <label>Show Age Limit:</label>
+    <br>
+    <input type="radio" value="All Ages" name="ageLimit">All Ages<br>
+    <input type="radio" value="21+" name ="ageLimit">21+<br>
+  </div>
+
+  <div>
+    <label>Show Category</label>
+    <br>
+    <input type="radio" value="metal" name="category">Metal<br>
+    <input type="radio" value="punk" name ="category">Punk<br>
+  </div>
+
+  <button
+  (click)="submitForm(newFlyer.value, newBands.value, newVenue.value, newDate.value, newPrice.value, newAgeLimit.value, newCategory.value); newFlyer.value=''; newBands.value=''; newVenue.value=''; newDate.value=''; newPrice.value=''; newAgeLimit.value='', newCategory.value=''">Add</button>
+
+</div>

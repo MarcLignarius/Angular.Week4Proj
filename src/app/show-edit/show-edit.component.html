@@ -1,4 +1,7 @@
-<h2>Edit Show</h2>
+<div class="panel-heading">
+  <h3 class="panel-title">Edit Show</h3>
+</div>
+<div class="panel-body">
 
 <!-- <label>Flyer:</label>
 <input [(ngModel)]="selectedShow.flyer" type="image" name="flyer">
@@ -21,8 +24,15 @@
 <br>
 
 <label>All ages?</label><br>
-<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">Yes<br>
-<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">No<br>
+<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="All Ages" name="ageLimit">All Ages<br>
+<input type="radio" [(ngModel)]="selectedShow.ageLimit" value="21+" name ="ageLimit">21+<br>
+<br>
+
+<label>Category</label><br>
+<input type="radio" [(ngModel)]="selectedShow.category" value="Metal" name="category">Metal<br>
+<input type="radio" [(ngModel)]="selectedShow.category" value="Punk" name ="category">Punk<br>
 <br>
 
 <button (click)="updateShow(selectedShow)">Update</button>
+
+</div>

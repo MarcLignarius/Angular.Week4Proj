@@ -1,17 +1,23 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Show } from '../models/show.model';
+import { Component, Input, OnInit } from '@angular/core';
+import { ShowService } from '../show.service';
 
 @Component({
   selector: 'app-show-edit',
   templateUrl: './show-edit.component.html',
-  styleUrls: ['./show-edit.component.css']
+  styleUrls: ['./show-edit.component.css'],
+  providers: [ShowService]
 })
-export class ShowEditComponent {
-  @Input() childSelectedShow: Show;
-  @Output() clickedDone = new EventEmitter();
-  finishedEditing() {
-    this.clickedDone.emit();
+
+export class ShowEditComponent implements OnInit {
+  @Input() selectedShow;
+
+  constructor(private showService: ShowService) { }
+
+  ngOnInit() {
   }
 
-  constructor() { }
+  updateShow(showToUpdate) {
+    this.showService.updateShow(showToUpdate);
+  }
+
 }

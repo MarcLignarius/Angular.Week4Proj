@@ -1,8 +1,15 @@
-<div *ngFor="let currentShow of childShowList">
-  <h5>{{currentShow.band}}</h5>
-  <p>{{currentShow.venue}}</p>
-  <p>{{currentShow.date}}</p>
-  <p>{{currentShow.price}} | {{currentShow.ageLimit}}</p>
-  <button (click)="editButtonClicked(currentShow)">Edit Listing</button>
-  <hr>
+<!-- TODO: implement filter selector -->
+<!-- TODO: implement pipes -->
+<!-- TODO: add show flyer, tags, hype score -->
+<!-- TODO: add admin functionality -->
+<h2>Show Guide:</h2>
+<div *ngFor="let show of shows" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{show.bands}}</h3>
+    <h5>{{show.venue}}</h5>
+    <p>{{show.date}}</p>
+    <p>${{show.price}} | {{show.agelimit}}</p>
+    <button (click)="goToShowDetail(show)">Full Detail</button>
+    <app-show-edit [selectedShow]="show"></app-show-edit>
+  </div>
 </div>

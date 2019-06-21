@@ -8,12 +8,12 @@
 <br>
 <div *ngFor="let show of shows | async | filters:filterByCategory" class="panel panel-default">
   <div class="panel-body">
-    <img class="showImage" src="./../../assets/merch-images/{{show.image}}" alt="{{show.artist}} Merch">
-    <!-- <img src="" alt=""> -->
+    <!-- <img class="showImage" src="./../../assets/show-flyers/{{show.flyer}}" alt="{{show.bands}} Flyer"> -->
     <h3>{{show.bands}}</h3>
     <h5>{{show.venue}}</h5>
     <p>{{show.date}}</p>
     <p>{{show.price}} | {{show.ageLimit}}</p>
+    <p>{{show.category}}</p>
     <button (click)="goToShowDetail(show)">Full Detail</button>
     <button (click)="goToShowEdit(show)">Edit Listing</button>
     <app-show-edit [selectedShow]="show"></app-show-edit>

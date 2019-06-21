@@ -1,15 +1,21 @@
-<!-- TODO: implement filter selector -->
-<!-- TODO: implement pipes -->
-<!-- TODO: add show flyer, tags, hype score -->
-<!-- TODO: add admin functionality -->
-<h2>Show Guide:</h2>
-<div *ngFor="let show of shows" class="panel panel-default">
+<h2>Show Guide</h2>
+<select (change)="onSelect($event.target.value)">
+  <option value="all" selected="selected">All</option>
+  <option value="punk">Punk</option>
+  <option value="metal">Metal</option>
+</select>
+<br>
+<br>
+<div *ngFor="let show of shows | async | filters:filterByCategory" class="panel panel-default">
   <div class="panel-body">
+    <img class="showImage" src="./../../assets/merch-images/{{show.image}}" alt="{{show.artist}} Merch">
+    <!-- <img src="" alt=""> -->
     <h3>{{show.bands}}</h3>
     <h5>{{show.venue}}</h5>
     <p>{{show.date}}</p>
-    <p>${{show.price}} | {{show.agelimit}}</p>
+    <p>{{show.price}} | {{show.ageLimit}}</p>
     <button (click)="goToShowDetail(show)">Full Detail</button>
+    <!-- <button (click)="goToShowEdit(show)">Edit Listing</button> -->
     <app-show-edit [selectedShow]="show"></app-show-edit>
   </div>
 </div>

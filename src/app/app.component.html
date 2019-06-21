@@ -1,4 +1,4 @@
-<h3>PDX Show Guide</h3>
-<em>Epicodus Independent Project - 06/14/19 & 06/21/19</em>
-<app-show-list [childShowList]="masterShowList" (clickSender)="editShow($event)"></app-show-list>
-<app-show-edit [childSelectedShow]="selectedShow" (clickedDone)="finishedEditing()"></app-show-edit>
+<div class="container">
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
+</div>

@@ -45,6 +45,7 @@ var firebaseConfig = {
     appId: "xxx"  
   };
   ````
+* Paste this information in the _src/app/api-keys.ts_ file you created.
 
 ## Running unit tests
 

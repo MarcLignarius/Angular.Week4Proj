@@ -1,0 +1,94 @@
+{
+  "shows": [
+    {
+      "flyer": "NOFX.png",
+      "bands": "NOFX, Bad Religion, MXPX, Anti-Flag",
+      "venue": "Portland Meadows",
+      "date": "07/12/2019 03:00pm",
+      "price": 45,
+      "ageLimit": "21+",
+      "category": "punk"
+    },
+    {
+      "flyer": "Gojira.jpg",
+      "bands": "Gojira, TBD",
+      "venue": "Roseland Theater",
+      "date": "07/29/2019 07:00pm",
+      "price": 25,
+      "ageLimit": "All Ages",
+      "category": "metal"
+    },
+    {
+      "flyer": "warbringer-enforcer.jpg",
+      "bands": "Warbringer, Enforcer",
+      "venue": "Hawthorne Theater",
+      "date": "09/11/2019 08:00pm",
+      "price": 15,
+      "ageLimit": "All Ages",
+      "category": "metal"
+    },
+    {
+      "flyer": "melvins.jpg",
+      "bands": "Melvins, Redd Kross",
+      "venue": "Doug Fir Lounge",
+      "date": "09/11/2019 08:00pm",
+      "price": 33,
+      "ageLimit": "21+",
+      "category": "punk"
+    },
+    {
+      "flyer": "millencolin.jpg",
+      "bands": "Millencolin, TBD",
+      "venue": "Hawthorne Theater",
+      "date": "09/19/2019 08:00pm",
+      "price": 22,
+      "ageLimit": "All Ages",
+      "category": "punk"
+    },
+    {
+      "flyer": "revocation-voivod.jpg",
+      "bands": "Revocation, Voivod, Psycroptic, Skeletal Remains, Conjurer",
+      "venue": "Hawthorne Theater",
+      "date": "09/24/2019 06:30pm",
+      "price": 24,
+      "ageLimit": "All Ages",
+      "category": "metal"
+    },
+    {
+      "flyer": "boris.jpg",
+      "bands": "Boris",
+      "venue": "Doug Fir Lounge",
+      "date": "09/24/2019 08:00pm",
+      "price": 22,
+      "ageLimit": "21+",
+      "category": "metal"
+    },
+    {
+      "flyer": "periphery.jpg",
+      "bands": "Periphery, Veil of Maya, Covet",
+      "venue": "Hawthorne Theater",
+      "date": "09/28/2019 07:00pm",
+      "price": 32,
+      "ageLimit": "All Ages",
+      "category": "metal"
+    },
+    {
+      "flyer": "strungout.jpg",
+      "bands": "Strung Out, The Casualties, Over Our Eyes",
+      "venue": "Hawthorne Theater",
+      "date": "10/31/2019 08:00pm",
+      "price": 20,
+      "ageLimit": "All Ages",
+      "category": "punk"
+    },
+    {
+      "flyer": "nile.jpg",
+      "bands": "Nile, Terrorizer, Von Doom, Petrification, Grim Ritual",
+      "venue": "Hawthorne Theater",
+      "date": "11/22/2019 08:00pm",
+      "price": 25,
+      "ageLimit": "All Ages",
+      "category": "metal"
+    },
+  ]
+}

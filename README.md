@@ -14,6 +14,19 @@ Since there was a lot of planning and not a whole lot of coding at the early sta
 
 https://docs.google.com/document/d/12a0YBeVxg2IqQtrpJ0FzFHN0KIhpG7K0PeA0x6iBJho/edit?usp=sharing
 
+## Features
+
+_Live:_
+
+* Displays a list of shows (permission error that needs fixing)
+* List of shows can be filtered by category.
+* Each show can be edited and changes saved.
+
+_To be added:_
+
+* User can add a show.
+* Separate the edit form to a new route.
+
 ## Installation and Setup
 
 _Cloning and installing the application_
@@ -21,7 +34,6 @@ _Cloning and installing the application_
 * If you don't have it installed, download and install Node.js 12.3.1
 * `$ git clone https://github.com/MarcLignarius/Angular.Week3Proj.git` This will clone the repository to your local machine.
 * `$ npm install` This will allow you to have access to the CLI (command line interface) for webpack.
-* `$ ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 _Setting up and populating the database_
 
@@ -47,14 +59,6 @@ var firebaseConfig = {
   ````
 * Paste this information in the _src/app/api-keys.ts_ file you created.
 
-## Running unit tests
+_Launching the application_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* `$ ng serve --open` for a dev server. The app will open and automatically reload if you change any of the source files.
